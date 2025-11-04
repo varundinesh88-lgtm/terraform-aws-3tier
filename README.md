@@ -1,10 +1,13 @@
-# Terraform AWS 3-Tier Architecture – README Portfolio
+# Project 1 - 3-Tier Architecture using Terraform (IaC)
+## Terraform AWS 3-Tier Architecture
 
 ### Project Overview
 
 This project demonstrates the deployment of a highly available and scalable 3-Tier Architecture on AWS using Terraform. The setup includes a Load Balancer, Auto Scaling Group, and RDS MySQL database. The infrastructure was provisioned entirely through Infrastructure as Code (IaC) principles, ensuring reusability, consistency, and automation.
 
-[Insert Screenshot: Terraform AWS 3-Tier Architecture Diagram]
+Terraform AWS 3-Tier Architecture
+<img width="1024" height="1536" alt="Architecture" src="https://github.com/user-attachments/assets/a20f7358-73aa-46ec-a757-332697533298" />
+
 
 ### Tech Stack
 
@@ -23,7 +26,9 @@ The architecture is divided into three tiers:
 
 Terraform provisions all required components including VPC, subnets, route tables, security groups, and the associated compute resources.
 
-[Insert Screenshot: VPC Setup Diagram]
+Terraform File Structure
+<img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/d708a9df-e377-4af8-94fb-6d70c7dd152f" />
+
 
 ### Implementation Steps
 * Created a dedicated VPC with public and private subnets.
@@ -36,19 +41,24 @@ Terraform provisions all required components including VPC, subnets, route table
 * Validated load balancer and database connections.
 * Pushed Terraform configurations to GitHub for version control.
 
-[Insert Screenshot: Terraform init/plan/apply Output]
+Terraform init/plan/apply Output
+<img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/baa8d3e5-f0df-4050-97b5-44a43de99ef7" />
+<img width="1920" height="1080" alt="3" src="https://github.com/user-attachments/assets/ed7a5543-1e6b-437a-bf4e-9a5683347e72" />
 
-[Insert Screenshot: EC2 Instances Running in Console]
+EC2 Instances
+<img width="1920" height="1080" alt="6" src="https://github.com/user-attachments/assets/7956a241-1987-4989-aeee-0e041544db25" />
 
-[Insert Screenshot: Load Balancer Healthy Targets View]
+Load Balancer
+<img width="1920" height="1080" alt="7" src="https://github.com/user-attachments/assets/5b2c11cc-15d7-4de3-a40d-bae10b5794f9" />
 
-[Insert Screenshot: Auto Scaling Group Activity Logs]
+VPC and Subnets
+<img width="1920" height="1080" alt="4" src="https://github.com/user-attachments/assets/9dbc882e-69a3-4d24-a9ab-698c0b3fd124" />
 
-[Insert Screenshot: RDS Instance Console View]
+RDS Instance
+<img width="1920" height="1080" alt="9" src="https://github.com/user-attachments/assets/1463ebdf-cae5-4845-a157-d59a6b232e99" />
 
-[Insert Screenshot: MySQL Database Connection Test]
-
-[Insert Screenshot: GitHub Repository Push Confirmation]
+GitHub Repository Push Confirmation
+<img width="1920" height="1080" alt="12" src="https://github.com/user-attachments/assets/5bf760ba-b433-4457-9c93-39d63132657e" />
 
 
 ### Terraform Code Structure
@@ -65,9 +75,8 @@ Terraform provisions all required components including VPC, subnets, route table
 
 Once the infrastructure was deployed, validation was performed by accessing the Application Load Balancer DNS to verify web app availability. The MySQL database connection was tested using the RDS endpoint to confirm proper communication from the application layer.
 
-[Insert Screenshot: Web App Access via Load Balancer DNS]
-
-[Insert Screenshot: MySQL Test Database Query Output]
+Web App Access via Load Balancer DNS
+<img width="1920" height="1080" alt="11" src="https://github.com/user-attachments/assets/f933342f-b679-4321-8b0d-404b1e107f95" />
 
 ### Key Learnings
 
@@ -81,7 +90,8 @@ Once the infrastructure was deployed, validation was performed by accessing the 
 
 Successfully deployed a resilient and production-style 3-tier AWS architecture using Terraform. All resources were managed and version-controlled through GitHub, with validation confirmed via the ALB endpoint and MySQL database connection.
 
-[Insert Screenshot: MySQL testdb verification]
+MySQL testdb verification
+<img width="1920" height="1080" alt="10" src="https://github.com/user-attachments/assets/28cd58c3-18d6-420b-a8f0-fcbbee084596" />
 
 ### Conclusion
 
