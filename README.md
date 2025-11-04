@@ -24,16 +24,15 @@ Terraform provisions all required components including VPC, subnets, route table
 [Insert Screenshot: VPC Setup Diagram]
 
 4. Implementation Steps
-
- 1. Created a dedicated VPC with public and private subnets.
- 2. Configured Internet Gateway, Route Tables, and Security Groups.
- 3. Deployed an Application Load Balancer in public subnets.
- 4. Created a Launch Template for EC2 instances with user data for app setup.
- 5. Configured Auto Scaling Group for instance scalability.
- 6. Provisioned RDS MySQL instance in private subnet.
- 7. Connected EC2 instances with RDS database.
- 8. Validated load balancer and database connections.
- 9. Pushed Terraform configurations to GitHub for version control.
+* Created a dedicated VPC with public and private subnets.
+* Configured Internet Gateway, Route Tables, and Security Groups.
+* Deployed an Application Load Balancer in public subnets.
+* Created a Launch Template for EC2 instances with user data for app setup.
+* Configured Auto Scaling Group for instance scalability.
+* Provisioned RDS MySQL instance in private subnet.
+* Connected EC2 instances with RDS database.
+* Validated load balancer and database connections.
+* Pushed Terraform configurations to GitHub for version control.
 
 [Insert Screenshot: Terraform init/plan/apply Output]
 [Insert Screenshot: EC2 Instances Running in Console]
