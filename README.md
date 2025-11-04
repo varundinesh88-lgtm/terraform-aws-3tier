@@ -6,6 +6,7 @@
 This project demonstrates the deployment of a highly available and scalable 3-Tier Architecture on AWS using Terraform. The setup includes a Load Balancer, Auto Scaling Group, and RDS MySQL database. The infrastructure was provisioned entirely through Infrastructure as Code (IaC) principles, ensuring reusability, consistency, and automation.
 
 Terraform AWS 3-Tier Architecture
+
 <img width="500" height="750" alt="Architecture" src="https://github.com/user-attachments/assets/a20f7358-73aa-46ec-a757-332697533298" />
 
 
