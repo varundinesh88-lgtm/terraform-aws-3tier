@@ -1,15 +1,15 @@
 # Project 1 - 3-Tier Architecture using Terraform (IaC)
 ## Terraform AWS 3-Tier Architecture
 
-### Project Overview
+### _**Project Overview**_
 
 This project demonstrates the deployment of a highly available and scalable 3-Tier Architecture on AWS using Terraform. The setup includes a Load Balancer, Auto Scaling Group, and RDS MySQL database. The infrastructure was provisioned entirely through Infrastructure as Code (IaC) principles, ensuring reusability, consistency, and automation.
 
 Terraform AWS 3-Tier Architecture
-<img width="1024" height="1536" alt="Architecture" src="https://github.com/user-attachments/assets/a20f7358-73aa-46ec-a757-332697533298" />
+<img width="500" height="750" alt="Architecture" src="https://github.com/user-attachments/assets/a20f7358-73aa-46ec-a757-332697533298" />
 
 
-### Tech Stack
+### _**Tech Stack**_
 
 - Terraform (IaC)
 - AWS EC2, ALB, Auto Scaling, RDS (MySQL)
@@ -17,7 +17,7 @@ Terraform AWS 3-Tier Architecture
 - GitHub for version control
 - Ubuntu EC2 instance for deployment
 
-### Architecture
+### _**Architecture**_
 
 The architecture is divided into three tiers:
 * Web Tier – Handles incoming traffic through an Application Load Balancer (ALB) and routes it to EC2 instances.
@@ -30,7 +30,7 @@ Terraform File Structure
 <img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/d708a9df-e377-4af8-94fb-6d70c7dd152f" />
 
 
-### Implementation Steps
+### _**Implementation Steps**_
 * Created a dedicated VPC with public and private subnets.
 * Configured Internet Gateway, Route Tables, and Security Groups.
 * Deployed an Application Load Balancer in public subnets.
@@ -61,7 +61,7 @@ GitHub Repository Push Confirmation
 <img width="1920" height="1080" alt="12" src="https://github.com/user-attachments/assets/5bf760ba-b433-4457-9c93-39d63132657e" />
 
 
-### Terraform Code Structure
+### _**Terraform Code Structure**_
 
 * vpc.tf – Defines VPC, subnets, and networking components.
 * security-groups.tf – Defines all security groups.
@@ -71,14 +71,14 @@ GitHub Repository Push Confirmation
 * variables.tf & outputs.tf – Handle input variables and output values.
 * provider.tf – Defines AWS provider configuration.
 
-### Testing and Validation
+### _**Testing and Validation**_
 
 Once the infrastructure was deployed, validation was performed by accessing the Application Load Balancer DNS to verify web app availability. The MySQL database connection was tested using the RDS endpoint to confirm proper communication from the application layer.
 
 Web App Access via Load Balancer DNS
 <img width="1920" height="1080" alt="11" src="https://github.com/user-attachments/assets/f933342f-b679-4321-8b0d-404b1e107f95" />
 
-### Key Learnings
+### _**Key Learnings**_
 
 - End-to-end infrastructure automation using Terraform.
 - Managing dependencies between multi-tier AWS resources.
@@ -86,14 +86,14 @@ Web App Access via Load Balancer DNS
 - Automating app deployment via user data.
 - Working with Git versioning and IaC best practices.
 
-### Result
+### _**Result**_
 
 Successfully deployed a resilient and production-style 3-tier AWS architecture using Terraform. All resources were managed and version-controlled through GitHub, with validation confirmed via the ALB endpoint and MySQL database connection.
 
 MySQL testdb verification
 <img width="1920" height="1080" alt="10" src="https://github.com/user-attachments/assets/28cd58c3-18d6-420b-a8f0-fcbbee084596" />
 
-### Conclusion
+### _**Conclusion**_
 
 This project showcases practical expertise in Infrastructure as Code (IaC) using Terraform, along with AWS architecture design and automation principles. The resulting infrastructure is scalable, secure, and demonstrates the complete lifecycle of a 3-tier cloud deployment.
 
