@@ -16,24 +16,25 @@ This project demonstrates the deployment of a highly available and scalable 3-Ti
 3. Architecture
 
 The architecture is divided into three tiers:
-• Web Tier – Handles incoming traffic through an Application Load Balancer (ALB) and routes it to EC2 instances.
-• Application Tier – EC2 instances deployed within an Auto Scaling Group to ensure availability and scalability.
-• Database Tier – Amazon RDS MySQL instance hosted in private subnets for secure data storage.
+* Web Tier – Handles incoming traffic through an Application Load Balancer (ALB) and routes it to EC2 instances.
+* Application Tier – EC2 instances deployed within an Auto Scaling Group to ensure availability and scalability.
+* Database Tier – Amazon RDS MySQL instance hosted in private subnets for secure data storage.
 
 Terraform provisions all required components including VPC, subnets, route tables, security groups, and the associated compute resources.
 [Insert Screenshot: VPC Setup Diagram]
 
 4. Implementation Steps
 
-1.	1. Created a dedicated VPC with public and private subnets.
-2.	2. Configured Internet Gateway, Route Tables, and Security Groups.
-3.	3. Deployed an Application Load Balancer in public subnets.
-4.	4. Created a Launch Template for EC2 instances with user data for app setup.
-5.	5. Configured Auto Scaling Group for instance scalability.
-6.	6. Provisioned RDS MySQL instance in private subnet.
-7.	7. Connected EC2 instances with RDS database.
-8.	8. Validated load balancer and database connections.
-9.	9. Pushed Terraform configurations to GitHub for version control.
+1. Created a dedicated VPC with public and private subnets.
+2. Configured Internet Gateway, Route Tables, and Security Groups.
+3. Deployed an Application Load Balancer in public subnets.
+4. Created a Launch Template for EC2 instances with user data for app setup.
+5. Configured Auto Scaling Group for instance scalability.
+6. Provisioned RDS MySQL instance in private subnet.
+7. Connected EC2 instances with RDS database.
+8. Validated load balancer and database connections.
+9. Pushed Terraform configurations to GitHub for version control.
+
 [Insert Screenshot: Terraform init/plan/apply Output]
 [Insert Screenshot: EC2 Instances Running in Console]
 [Insert Screenshot: Load Balancer Healthy Targets View]
@@ -44,13 +45,13 @@ Terraform provisions all required components including VPC, subnets, route table
 
 5. Terraform Code Structure
 
-• vpc.tf – Defines VPC, subnets, and networking components.
-• security-groups.tf – Defines all security groups.
-• launch-asg.tf – Creates launch template and auto scaling group.
-• alb.tf – Defines Application Load Balancer and target groups.
-• rds.tf – Provisions MySQL database instance.
-• variables.tf & outputs.tf – Handle input variables and output values.
-• provider.tf – Defines AWS provider configuration.
+* vpc.tf – Defines VPC, subnets, and networking components.
+* security-groups.tf – Defines all security groups.
+* launch-asg.tf – Creates launch template and auto scaling group.
+* alb.tf – Defines Application Load Balancer and target groups.
+* rds.tf – Provisions MySQL database instance.
+* variables.tf & outputs.tf – Handle input variables and output values.
+* provider.tf – Defines AWS provider configuration.
 
 6. Testing and Validation
 
