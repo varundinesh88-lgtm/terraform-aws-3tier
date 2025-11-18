@@ -25,20 +25,13 @@ Cloned existing repository and redeployed the 3-tier architecture with Terraform
 
 Created alarms and metrics for ALB 5XX errors and EC2 CPU utilization.
 
-2
-3
-
 3. Configure ALB Access Logs
 
 Enabled ALB access logging to S3 bucket.
 
-1
-
 4. Create SNS Topic for Notifications
 
 Configured SNS topic for alert delivery and confirmed email subscription.
-
-4
 
 ### Verification Steps
 
