@@ -24,14 +24,18 @@ Cloned existing repository and redeployed the 3-tier architecture with Terraform
 2. Add CloudWatch Alarms
 
 Created alarms and metrics for ALB 5XX errors and EC2 CPU utilization.
+<img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/c06ec25d-76c5-4959-a364-fb95146181b3" />
+<img width="1920" height="1080" alt="3" src="https://github.com/user-attachments/assets/9ec0c317-7938-4d22-8f0c-984863d36997" />
 
 3. Configure ALB Access Logs
 
 Enabled ALB access logging to S3 bucket.
+<img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/3fd3e558-ad18-4305-87e4-b7f47f729f3d" />
 
 4. Create SNS Topic for Notifications
 
 Configured SNS topic for alert delivery and confirmed email subscription.
+<img width="1920" height="1080" alt="4" src="https://github.com/user-attachments/assets/aba643c3-64c3-4ec2-a636-a9497d3a0ad9" />
 
 ### Verification Steps
 
